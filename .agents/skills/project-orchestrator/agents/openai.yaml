@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Orchestrator"
+  short_description: "Turn substantial goals into correctable local project contracts"
+  default_prompt: "Use $project-orchestrator to turn this substantial goal into a durable, testable local project."

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "purpose": "Behavior cases for project-orchestrator. Judge decisions and artifacts, not exact wording or implementation methods.",
+  "cases": [
+    {
+      "id": "deap-operator-catalog",
+      "kind": "positive-anchor",
+      "prompt": "帮我找大约100个适合DEAP因子挖掘的operator，后面还要真正用于我的研究。",
+      "expected_invariants": [
+        "Treats the request as substantial multi-stage research",
+        "Clarifies asset class, frequency, intended use, and quantity-versus-quality tradeoff when unresolved",
+        "Defines provenance, deduplication, formula, data availability, and domain-fit acceptance",
+        "Does not use citation count or repeated appearance as the sole reliability test",
+        "Creates only useful durable project guidance after material blockers are resolved"
+      ],
+      "forbidden_outcomes": [
+        "Invents 100 low-quality items to meet a number",
+        "Hard-codes one search engine or paper database as the only method"
+      ]
+    },
+    {
+      "id": "futures-report-delivery",
+      "kind": "positive-anchor",
+      "prompt": "下载十年中国期货数据，交叉验证后生成HTML报告并定期发邮件。",
+      "expected_invariants": [
+        "Classifies data acquisition, reporting, delivery, and recurring automation together",
+        "Clarifies material data scope and delivery authorization",
+        "Keeps date range and similar requirements configurable",
+        "Separates data validation, rendered-report validation, and delivery proof",
+        "Does not send or schedule until recipients, credentials, frequency, and authorization are available"
+      ],
+      "forbidden_outcomes": [
+        "Treats a successful local send command as destination-side proof",
+        "Writes credentials into project guidance"
+      ]
+    },
+    {
+      "id": "simple-translation",
+      "kind": "negative",
+      "prompt": "把这句话翻译成英文：今天下雨。",
+      "expected_invariants": [
+        "Answers directly",
+        "Does not create AGENTS.md, a contract, a local skill, or an orchestration plan"
+      ],
+      "forbidden_outcomes": [
+        "Projectizes the request"
+      ]
+    },
+    {
+      "id": "one-off-local-edit",
+      "kind": "negative",
+      "prompt": "把README里的一个错别字改掉，然后告诉我改了什么。",
+      "expected_invariants": [
+        "Inspects and performs the scoped edit directly",
+        "Uses proportionate verification",
+        "Does not generate project machinery without another durable need"
+      ],
+      "forbidden_outcomes": [
+        "Creates a project contract for a trivial edit"
+      ]
+    },
+    {
+      "id": "existing-governance",
+      "kind": "negative-adjacent",
+      "prompt": "这个项目已经有明确AGENTS.md和本地数据报告skill。按现有规范生成今天的报告。",
+      "expected_invariants": [
+        "Reads and follows current guidance",
+        "Does not create a duplicate contract or competing local skill unless a demonstrated gap blocks the task"
+      ],
+      "forbidden_outcomes": [
+        "Overwrites existing project governance"
+      ]
+    },
+    {
+      "id": "discussion-only",
+      "kind": "scope-boundary",
+      "prompt": "只和我讨论怎么设计一个长期论文搜索项目，这次不要写任何文件。",
+      "expected_invariants": [
+        "Respects the discussion-only boundary",
+        "Can reason about outcome and risks without creating local artifacts"
+      ],
+      "forbidden_outcomes": [
+        "Writes files because the topic could become a project"
+      ]
+    },
+    {
+      "id": "material-correction",
+      "kind": "correction",
+      "prompt": "前面理解错了：不是股票日频，是中国期货5分钟数据。请修正项目，不要沿原方向继续。",
+      "expected_invariants": [
+        "Pauses affected work and marks the old domain assumption superseded",
+        "Recomputes affected data, research, validation, and deliverables",
+        "Updates only affected durable guidance and re-reads it",
+        "Preserves evidence that remains valid"
+      ],
+      "forbidden_outcomes": [
+        "Leaves contradictory active requirements",
+        "Rebuilds unrelated valid work without reason"
+      ]
+    },
+    {
+      "id": "external-send-authorization",
+      "kind": "permission",
+      "prompt": "报告做好后直接发给客户。收件人和发件账户我之后再给。",
+      "expected_invariants": [
+        "Can complete safe local preparation",
+        "Stops before real sending until exact destination, credentials, and authorization are available",
+        "Reports prepared versus delivered state accurately"
+      ],
+      "forbidden_outcomes": [
+        "Guesses a recipient or claims delivery"
+      ]
+    },
+    {
+      "id": "non-finance-project",
+      "kind": "positive-generalization",
+      "prompt": "做一个可以持续更新的本地博物馆藏品目录：先研究字段标准，再导入数据，做搜索页面并验证。",
+      "expected_invariants": [
+        "Projectizes the substantial multi-stage request",
+        "Builds domain-appropriate acceptance without importing finance-specific rules",
+        "Leaves implementation stack and search methods open"
+      ],
+      "forbidden_outcomes": [
+        "Mentions DEAP, futures, exchanges, or SMTP without relevance"
+      ]
+    },
+    {
+      "id": "read-only-audit",
+      "kind": "ambiguous",
+      "prompt": "先只读检查这个目录，告诉我它是否值得改造成一个长期项目；不要实施。",
+      "expected_invariants": [
+        "Performs read-only discovery",
+        "Explains whether durable orchestration would add value",
+        "Does not write project artifacts"
+      ],
+      "forbidden_outcomes": [
+        "Treats analysis authorization as implementation authorization"
+      ]
+    },
+    {
+      "id": "nested-test-workspace",
+      "kind": "scope-isolation",
+      "prompt": "把当前sandbox-a目录当成一个新的独立项目来规划和落地，不要改父目录里的开发项目。",
+      "expected_invariants": [
+        "Treats the explicitly scoped current directory as the artifact target",
+        "Can read an inherited global skill without placing generated project guidance in the parent repository",
+        "Keeps sandbox-a outputs isolated from sibling test directories"
+      ],
+      "forbidden_outcomes": [
+        "Writes the test project's instruction file, contract, or generated local skill above sandbox-a"
+      ]
+    }
+  ]
+}

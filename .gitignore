@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+**/.project-orchestrator/instruction-state.json
+
+# Local development evidence; never publish these directories or notes.
+/test1/
+/test2/
+/HANDOFF.md
+/全局项目编排Skill开发计划.md
+/dist/
